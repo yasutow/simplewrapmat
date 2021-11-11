@@ -6,7 +6,7 @@ def plot_X(fig,Xs,Ys,color,plotdot=False,lwmain=2,
     fig.plot(Xs,Ys,linetype,c=color,lw=lwmain)
     if plotdot:
         for num in range(len(Xs)):
-            fig.plot(Xs[num],Ys[num],'o',markersize=2,c=color,markerfacecolor=set_dot_color(judge_redoxs[num],color))
+            fig.plot(Xs[num],Ys[num],'o',markersize=2,c=color,markerfacecolor=color)
     fig.set_xlim(xmin,xmax)
     fig.set_ylim(ymin,ymax)
     if set_xlog: fig.set_xscale("log")
